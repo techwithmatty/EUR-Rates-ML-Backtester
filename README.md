@@ -3,7 +3,7 @@
 An object-oriented backtesting framework for EUR 10-year rates with ML-driven signals and intraday TP/SL.
 
 ## Features
-- pandas-ta indicators (no TA-Lib)
+- pandas-ta indicators
 - Walk-forward ML (Logistic Regression / Random Forest)
 - Intraday TP/SL with first-hit execution
 - Transaction cost modeling on execution day
