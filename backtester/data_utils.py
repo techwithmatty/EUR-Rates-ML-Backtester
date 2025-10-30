@@ -3,8 +3,8 @@ import pandas as pd
 
 class DataUtils:
     @staticmethod
-    def normalize_ohlcv_cols(df: pd.DataFrame, time_col: str = "Time") -> pd.DataFrame:
-        """Standardize column names and types."""
+    def normalise_ohlcv_cols(df: pd.DataFrame, time_col: str = "Time") -> pd.DataFrame:
+        """Standardise column names and types."""
         rename = {
             "time": "Time", "date": "Time",
             "open": "Open", "high": "High", "low": "Low", "close": "Close",
@@ -20,10 +20,7 @@ class DataUtils:
 
     @staticmethod
     def first_tp_sl_hit(series: pd.Series, tp: float, sl: float, is_long: bool):
-        """
-        Return (hit, idx, tag) for first crossing of TP/SL in the price series.
-        tag ∈ {'TP','SL'} when hit=True.
-        """
+        """Return (hit, idx, tag) for first crossing of TP/SL in the price series."""
         a = series.values
         if is_long:
             tp_idx = np.where(a >= tp)[0]
