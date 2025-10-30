@@ -1,6 +1,8 @@
-# Rates Quant Trading EUR 10s Backtester
+# EUR Rates ML Backtester
 
-An object-oriented backtesting framework for EUR 10-year rates with ML-driven signals and intraday TP/SL.
+A machine learning–driven backtesting framework for EUR 10-year rates, designed to model, test, and evaluate trading signals with intraday TP/SL execution.
+
+This project provides an object-oriented foundation for quantitative strategy research, blending econometric indicators, technical features, and systematic trading logic.
 
 ## Features
 - pandas-ta indicators
